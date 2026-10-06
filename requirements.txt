@@ -1,0 +1,44 @@
+# ============================================================
+# Chest X-ray Disease Classifier — Python Dependencies
+# Tested on: Python 3.10, CUDA 12.1
+# Run: pip install -r requirements.txt
+# ============================================================
+
+# Core deep learning
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Dashboard
+streamlit>=1.32.0
+
+# Model zoo (easy DenseNet/ResNet variants)
+timm>=0.9.12
+
+# Data & numerics
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Calibration
+netcal>=1.3.5
+
+# Reporting & Web Acquisition
+reportlab>=4.0.0
+requests>=2.31.0
+
+# API Microservice
+fastapi>=0.110.0
+uvicorn>=0.28.0
+python-multipart>=0.0.9
+
+# Progress & utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+

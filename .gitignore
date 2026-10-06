@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE & OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated bulk dataset images (keep CSVs & sample presets)
+data/chexpert/CheXpert-v1.0-small/
+data/nih/images/
+
+# Keep samples and split metadata
+!data/samples/
+!data/chexpert/train.csv
+!data/nih/Data_Entry_2017_v2020.csv
+
+# Large duplicate/backup weights (>50MB) - keep best_model.pth or upload to GitHub Releases
+results/checkpoints/*_resnet50.pth
+results/checkpoints/*_calibrated*.pth
+*.pth.bak
+
+# Streamlit secrets & local cache
+.streamlit/secrets.toml
+notebooks/.ipynb_checkpoints

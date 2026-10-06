@@ -1,0 +1,21 @@
+{
+  "temperature": 0.42827,
+  "ece_before": {
+    "Cardiomegaly": 0.02144,
+    "Pleural Effusion": 0.01198,
+    "Atelectasis": 0.02476,
+    "Edema": 0.06159
+  },
+  "ece_after": {
+    "Cardiomegaly": 0.00134,
+    "Pleural Effusion": 0.00011,
+    "Atelectasis": 0.00438,
+    "Edema": 0.01477
+  },
+  "ece_improvement": {
+    "Cardiomegaly": 0.0201,
+    "Pleural Effusion": 0.01187,
+    "Atelectasis": 0.02038,
+    "Edema": 0.04682
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "train_loss": [
+    0.15856877579514322,
+    0.05113284142109854,
+    0.016754768483726114,
+    0.005561485934745649,
+    0.005108364239527747,
+    0.003956140701434222,
+    0.003195562761212731,
+    0.002652202624474363,
+    0.002285735657567094,
+    0.001812769501502144
+  ],
+  "val_loss": [
+    0.03493300825357437,
+    0.029873449355363846,
+    0.0044090558076277375,
+    0.0017006351263262331,
+    0.0020046982099302113,
+    0.0010550268489168957,
+    0.0009723427356220782,
+    0.0008436732459813356,
+    0.0008174566901288927,
+    0.0008029073505895212
+  ],
+  "val_metrics": [
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 0.9577
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 0.9894
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    },
+    {
+      "per_label": {
+        "Cardiomegaly": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Pleural Effusion": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Atelectasis": {
+          "auroc": 1.0,
+          "f1": 1.0
+        },
+        "Edema": {
+          "auroc": 1.0,
+          "f1": 1.0
+        }
+      },
+      "mean_auroc": 1.0,
+      "mean_f1": 1.0
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+# ============================================================
+# config.yaml — Central hyperparameter config
+# All scripts read from this file. Override via CLI args.
+# ============================================================
+
+project:
+  name: "chest-xray-classifier"
+  seed: 42
+  device: "cpu"          # "cpu" or "cuda"
+
+# ── Labels ────────────────────────────────────────────────
+labels:
+  # Canonical names used internally throughout the codebase
+  names:
+    - "Cardiomegaly"
+    - "Pleural Effusion"
+    - "Atelectasis"
+    - "Edema"
+  num_classes: 4
+
+  # Explicit CheXpert column → canonical name mapping
+  chexpert_map:
+    "Cardiomegaly":    "Cardiomegaly"
+    "Pleural Effusion": "Pleural Effusion"
+    "Atelectasis":     "Atelectasis"
+    "Edema":           "Edema"
+
+  # Explicit NIH column → canonical name mapping
+  # NOTE: NIH uses "Effusion" not "Pleural Effusion"
+  nih_map:
+    "Cardiomegaly": "Cardiomegaly"
+    "Effusion":     "Pleural Effusion"
+    "Atelectasis":  "Atelectasis"
+    "Edema":        "Edema"
+
+  # Uncertain label policy: "u-zeros" or "u-ones"
+  uncertain_policy: "u-zeros"
+
+# ── Paths ─────────────────────────────────────────────────
+paths:
+  chexpert_csv_train:   "data/chexpert/train.csv"
+  chexpert_csv_valid:   "data/chexpert/train.csv"
+  chexpert_img_root:    "data/chexpert/"
+
+  nih_csv:              "data/nih/Data_Entry_2017_v2020.csv"
+  nih_img_root:         "data/nih/images/"
+
+  checkpoint_dir:       "results/checkpoints/"
+  figures_dir:          "results/figures/"
+  metrics_dir:          "results/metrics/"
+
+# ── Dataset ───────────────────────────────────────────────
+dataset:
+  max_train_samples:    1200      # cap training set size
+  val_split:            0.20      # fraction of patients for internal val
+  image_size:           224       # resize to 224×224
+  num_workers:          0         # 0 for CPU / Windows safety
+
+# ── Training ──────────────────────────────────────────────
+training:
+  epochs:               10
+  batch_size:           32
+  learning_rate:        3.0e-4
+  weight_decay:         1.0e-5
+  scheduler:            "cosine"  # "cosine" | "step"
+  early_stopping_patience: 10
+  amp_enabled:          false     # Automatic Mixed Precision (GPU only)
+
+# ── Model ─────────────────────────────────────────────────
+model:
+  backbone:             "resnet50"   # "densenet121" | "resnet50"
+  pretrained:           true
+  dropout:              0.0
+
+# ── Augmentation ──────────────────────────────────────────
+augmentation:
+  horizontal_flip:      true
+  rotation_degrees:     10
+  color_jitter:
+    brightness:         0.2
+    contrast:           0.2
+    saturation:         0.1
+  normalize_mean:       [0.485, 0.456, 0.406]   # ImageNet stats
+  normalize_std:        [0.229, 0.224, 0.225]
+
+# ── Evaluation ────────────────────────────────────────────
+evaluation:
+  bootstrap_n:          1000      # bootstrap iterations for 95% CIs
+  calibration_bins:     10        # reliability diagram bins
+
+# ── Grad-CAM ──────────────────────────────────────────────
+gradcam:
+  n_samples:            4         # images to visualize per label
+  alpha:                0.4       # heatmap overlay transparency

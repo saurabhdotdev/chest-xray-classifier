@@ -1,0 +1,36 @@
+{
+  "nih_results": {
+    "Cardiomegaly": {
+      "auroc": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    },
+    "Pleural Effusion": {
+      "auroc": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    },
+    "Atelectasis": {
+      "auroc": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    },
+    "Edema": {
+      "auroc": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    }
+  },
+  "internal_val_aurocs": {
+    "Cardiomegaly": 1.0,
+    "Pleural Effusion": 1.0,
+    "Atelectasis": 1.0,
+    "Edema": 1.0
+  },
+  "drop": {
+    "Cardiomegaly": 0.0,
+    "Pleural Effusion": 0.0,
+    "Atelectasis": 0.0,
+    "Edema": 0.0
+  }
+}
